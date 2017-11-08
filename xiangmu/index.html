@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>项目介绍</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/jq22-demo.css">
+	<link rel="stylesheet" href="css/style.css" media="screen" />
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="jq22-header">
+		<h1>项目介绍</h1>
+		<iframe  frameborder="no" border="0" marginwidth="0" marginheight="0" width=530 height=86 src="//music.163.com/outchain/player?type=2&id=414706021&auto=1&height=66"></iframe>
+
+	</header>
+	<section class="jq22-container">
+		<div id="timeline">
+			<ul id="dates">
+				<li><a href="#1900">项目</a></li>
+				<li><a href="#1930">导航</a></li>
+				<li><a href="#1944">搜索</a></li>
+				<li><a href="#1950">banner</a></li>
+				<li><a href="#1971">电影</a></li>
+				<li><a href="#1977">电视</a></li>
+				<li><a href="#1989">动漫</a></li>
+				<li><a href="#1999">综艺</a></li>
+				<li><a href="#2001">游戏</a></li>
+				<li><a href="#2011">直播</a></li>
+			</ul>
+			<ul id="issues">
+				<li id="1900">
+					<img src="images/1.png" width="256" height="256" />
+					<h1>项目</h1>
+					<p>整个项目是在参考一些视频网站的首页的基础上上开始的的视频网站。根据时间和技能点的学习，基本每个网页的内容运用了不同的功能，搭建出了网页的数量。在项目的基本布局加入了自己的喜好和最近的看的东西。在项目中做到后面，由于没有具体的网站的参照，更多的是思考想要在项目的后面的做出新鲜不同的功能的东西，所以在本项目中采用几个插件。</p>
+					<p>整个项目包括首页，电影，电视，动漫，综艺，游戏和直播等8个页面。</p>
+				</li>
+				<li id="1930">
+					<img src="images/2.png" width="256" height="256" />
+					<h1>导航</h1>
+					<p>首先做出来的是导航，基本都是很常见的那种导航栏。基本都是差不多的左图标，右搜索，中间的导航。导航写出来就搭建好自己固定的网页的基本轮廓。主要需要注意的是在做左边的图标的时候，其实是是用了a标签，再点击左边的图标的时候是可以跳转的首页的。</p>
+				</li>
+				<li id="1944">
+					<img src="images/6.png" width="256" height="256" />
+					<h1>搜索</h1>
+					<p>搜索的功能是很简洁的，但是为了获取数据，在这采取是JSONP跨域请求。JSonp是解决的跨域的问题，通过动态创建script标签，通过把请求数据的地址放到script标签中src属性上，通过callback回调函数对数据进行渲染。在渲染的时候采用是模板渲染。</p>
+				</li>
+				<li id="1950">
+					<img src="images/4.png" width="256" height="256" />
+					<h1>banner</h1>
+					<p>首页的轮播图是很基本的轮播图。通过创建两个列表，进行划分一大一小。通过控制两个列表的索引值进行同步的变化。上面的大的轮播图是每次让图片进行淡入淡出，下面也是通过索引值，创建类名和删除兄弟元素的类名进行li的变化 。在这个功能中需要注意的如果让图片叠加在一起，采用定位，浮动不能让图片叠在一起。</p>
+				</li>
+				<li id="1971">
+					<img src="images/5.png" width="256" height="256" />
+					<h1>电影</h1>
+					<p>在电影的页面采用的电影轮播图，采用就是将轮播图的图片缩小，然后将图片进行定位，层级进行区分，然后把最后的一张图片放到第一张的位置。这个轮播图的难点进行图片的定位，和层级的设置。是固定的图片个数。然后进行的图片轮播。</p>
+					<p><a href="http://www.zhenai.com/" style=" color: purple">网站实例</a></p>
+				</li>
+				<li id="1977">
+					<img src="images/3.png" width="256" height="256" />
+					<h1>电视</h1>
+					<p>首先电视的布局采取的百分比布局，在图片的位置上是按照的百分比的占比进行放置图片。其次的是在点击图片的时候出现的是模态框的轮播图。（模态框就是弹出一个大盒子一个小盒子，大盒子设置透明度，小盒子显示内容，但是主页上的东西不变）。电视的轮播图采取的就是优酷三联的轮播图，采用的也是定位和层级的进行轮播图设置。</p>
+				</li>
+				<li id="1989">
+					<img src="images/7.png" width="256" height="256" />
+					<h1>动漫</h1>
+					<p>在动漫的这页采取就是弹幕视频的播放器。首先基本的视频所采用的是video标签。采用的video标签的首先要注意的是视频的格式，在video中基本有三种视频的格式：mp4，ogg，webm。是根据的浏览器的兼容性进行判断，采用哪种格式</p>
+				</li>
+				<li id="1999">
+					<img src="images/8.png" width="256" height="256" />
+					<h1>综艺</h1>
+					<p>综艺的页面就是做的比较粗糙的，综艺的功能采用的就是横向的部分滚动，和网易云音乐的背景音乐。进行放置播放。在这部分的滚动的时候所需要的注意的就是在设置滚动函数时的参数不要采用this，因为在普通函数中this指向的是全局。所以用that代替他。</p>
+				</li>
+				<li id="2001">
+					<img src="images/9.png" width="256" height="256" />
+					<h1>游戏</h1>
+					<p>游戏页面首先要有一个开场动画，其次是全屏滚动，在设置开场动画的时候，采取的也是video插件，其次在设置开场动画盒子的时候要有个一个top：0；left：0；的固定定位。然后再通过定时器设置让开场动画盒子消失</p>
+				</li>
+				<li id="2011">
+					<img src="images/10.png" width="256" height="256" />
+					<h1>直播</h1>
+					<p>在直播界面我尝试使用了几种不同的音乐插件</p>
+					<p>一种具有比较有律动的音乐号</p>
+					<p>具有回忆的80后的磁带的音乐播放器</p>
+				</li>
+			</ul>
+			<div id="grad_left"></div>
+			<div id="grad_right"></div>
+			<a href="#" id="next">+</a>
+			<a href="#" id="prev">-</a>
+		</div>
+	</section>
+
+	
+	<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script src="js/jquery.timelinr-0.9.6.js"></script>
+	<script>
+		$(function(){
+			$().timelinr({
+				arrowKeys: 'true'
+			})
+		});
+	</script>
+</body>
+</html>
